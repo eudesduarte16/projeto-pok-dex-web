@@ -1,1 +1,36 @@
-!
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex Web Completa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Pokédex Web</h1>
+
+    <div class="busca-container">
+        <input type="text" id="campo-busca" placeholder="Ex: Pikachu ou 25">
+        <button id="btn-buscar">Buscar</button>
+    </div>
+
+    <div class="controles">
+        <button id="btn-anterior">Página Anterior</button>
+        <button id="btn-proximo">Próxima Página</button>
+        <button id="btn-favoritos">Ver Favoritos ⭐</button>
+        <button id="btn-todos">Ver Todos</button>
+    </div>
+
+    <div id="lista-pokemon"></div>
+
+    <div id="modal-detalhes" class="modal">
+        <div class="conteudo-modal">
+            <span class="fechar">&times;</span>
+            <div id="info-pokemon"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
